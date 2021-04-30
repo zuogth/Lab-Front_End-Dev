@@ -1,0 +1,162 @@
+@font-face {
+    font-family: UTM-Hanzel;
+    src: url(./fonts/UTM-Hanzel);
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+html{
+    font-size: 14px;  
+}
+.header{   
+    padding: 1.2rem 0 0 0;
+    background: url("../images/bg-header.jpg");
+    position: relative;
+}
+.head-cont{
+    margin: 0 2.7rem;
+}
+.header:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 99%;
+    height: 50px;
+    background: url("../images/bg-header.png");
+}
+.logo img{
+    height: 6.4rem;
+}
+.header_right .search-top{
+    justify-content: flex-end;
+    padding: 0.2em 0 1.4em 0;
+}
+.select{
+    position: relative;
+    height: 2rem;
+    width: 9.1rem;
+    margin:0 0.5em;
+}
+.select select{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0 0 0 2.8em;
+    background-color: #f8f7f5;
+}
+.select i{
+    position: absolute;
+    top: 0.5em;
+    left: 0.9em;
+}
+.header_right .search-top .bookroom{
+    width: 9.8em;
+    height: 2em;
+    text-align: center;
+    background: url("../images/bg-book.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.header_right .search-top .bookroom h5{
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 2rem;
+}
+.search{
+    width: 18.3rem;
+    height: 2rem;
+    position: relative;
+}
+.search input{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    border: 1px solid;
+    padding: 0 1.4rem;
+    background-color: #f8f7f5;
+}.search i{
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+}
+ul{
+    margin: 0;
+    list-style: none;
+}
+.menu ul li a{
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+}
+.menu ul li{
+    display: inline-block;
+    margin: 0 0 0 3.7rem;
+}
+/* footer */
+footer{
+    background: url("../images/bg-footer.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.footer{
+    margin: 0 6em;   
+    color: #c9c9c9;
+    padding: 0 0 1em 0;
+}
+.footer h5{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ceaf55;
+    font-size: 1em;
+    margin: 3.1em 0 1.6em 0;
+}
+.contact ul li i{
+    margin-right: 1rem;
+}
+.contact li,.accom li,.service li{
+    margin-bottom: 1rem;
+}
+.footer .social i{
+    margin-right: 0.9em;
+}
+.footer hr{
+    margin: 1.7em 0 1.7em 0;
+    background: #888787;
+}
+.footer-bot ul li{
+    display: inline-block;
+}
+.footer-bot ul li span{
+    margin:0 0.8em;
+}
+.footer-bot ul li a{
+    text-decoration: none;
+    color: #c9c9c9;
+}
+/* footer */
+/* responsive */
+@media only screen and (max-width:1200px){
+    .footer-bot{
+        text-align: center;
+    }
+    
+}
+@media only screen and (max-width:992px){
+    html{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:768px){
+    .logo img{
+        height: 5rem;
+    }
+}
+/* responsive */
