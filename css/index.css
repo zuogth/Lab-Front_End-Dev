@@ -1,6 +1,6 @@
 @font-face {
     font-family: UTM-Hanzel;
-    src: url(./fonts/UTM-Hanzel);
+    src: url(../fonts/UTM-Hanzel.ttf);
 }
 *{
     margin: 0;
@@ -10,6 +10,9 @@
 }
 html{
     font-size: 14px;  
+}
+.containers{
+    margin: 0 5.75em;
 }
 .header{   
     padding: 1.2rem 0 0 0;
@@ -100,14 +103,121 @@ ul{
     display: inline-block;
     margin: 0 0 0 3.7rem;
 }
+/* section */
+
+.welcome{
+    background-color: #d7b659;
+    position: relative;
+    padding: 3.3em 0;
+}
+.welcome::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 99%;
+    height: 50px;
+    background: url("../images/bg-intro.png");
+    background-size:100% 100% ;
+    background-repeat: no-repeat;
+}
+.welcome:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 99%;
+    height: 50px;
+    background: url("../images/bg-intro2.png");
+    background-size:100% 100% ;
+    background-repeat: no-repeat;
+}
+.welcome .content{
+    display: flex;
+    justify-content: space-between;
+}
+.welcome-txt{
+    width: 22.85rem;
+}
+.welcome-txt h5{
+     font-size: 2.15em;
+ }
+.welcome-txt h4{
+   font-family: UTM-Hanzel;
+    font-size: 2.6em;
+    margin-bottom: 2.6rem;
+}
+.welcome-txt p{
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+.welcome-txt a{
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+}
+.welcome-img{
+    display: flex;
+    width: 60.2em;
+    justify-content: space-between;
+}
+.welcome-img .item{
+    width: 19em;
+    position: relative;
+}
+.welcome-img .item:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    background: url("../images/intro-desc.png");
+}
+.welcome-img .item1{
+    background: url("/images/intro-1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.welcome-img .item2{
+    background: url("/images/intro-2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.welcome-img .item3{
+    background: url("/images/intro-3.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.item_nd{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/inrtro-k.png");
+    background-size:100% 100% ;
+    
+}
+.item_nd h5{
+    font-size: 1.6em;
+    font-family: UTM-Hanzel;
+    text-transform: uppercase;
+    color: #d7b659;
+    position: absolute;
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
 /* footer */
 footer{
     background: url("../images/bg-footer.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-.footer{
-    margin: 0 6em;   
+.footer{   
     color: #c9c9c9;
     padding: 0 0 1em 0;
 }
