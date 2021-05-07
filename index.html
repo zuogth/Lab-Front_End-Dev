@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/index.css">
     <title>Document</title>
 </head>
@@ -15,12 +16,12 @@
     <header class="sticky-top">
         <div class="header">
             <div class="head-cont">
-                <div class="d-flex justify-content-between">
+                <div class="head-cont-item">
                     <div class="logo">
                         <img src="./images/logo.png" alt="logo">
                     </div>
                     <div class="header_right">
-                        <div class="d-flex search-top">
+                        <div class="search-top">
                             <div class="search">                       
                                 <input type="search" placeholder="Search"/>
                                 <i class="fas fa-search"></i>
@@ -89,21 +90,280 @@
                         <a href="#">Read more</a>
                     </div>
                     <div class="welcome-img">
-                        <div class="item item1">
-                            <div class="item_nd">
-                                <h5>Double room</h5>
+                        <a href="" class="a-item">    
+                            <div class="item">
+                                <div class="item-img">
+                                    <img src="./images/intro-1.jpg" alt="">
+                                </div>
+                                <div class="item_nd">
+                                    <h5>Double room</h5>
+                                </div>
+                            </div>                   
+                        </a>
+                        <a href="" class="a-item">
+                        <div class="item">
+                            <div class="item-img">
+                                <img src="./images/intro-2.jpg" alt="">
                             </div>
-                        </div>
-                        <div class="item item2">
                             <div class="item_nd">
                                 <h5>Triple room</h5>
-                            </div>
+                            </div>    
                         </div>
-                        <div class="item item3">
+                    </a>
+                    <a href="" class="a-item">
+                        <div class="item">
+                            <div class="item-img">
+                                <img src="./images/intro-3.jpg" alt="">
+                            </div>
                             <div class="item_nd">
                                 <h5>Dorm room</h5>
                             </div>
                         </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tours-travel">
+                <div  class="title">
+                    <h2>Tours Travel</h2>
+                    <img src="./images/bg-titH2a.png" alt="">
+                </div>
+                
+                <div class="containers tours-travel-item">
+                    <div class="item-tour">
+                        <div class="img">
+                            <a href=""><img src="./images/travel-1.jpg" alt="travel-1"></a>
+                        </div>
+                        <div class="text">
+                            <p>Bich Dong Pahoga
+                                Mua Cave - Phat Diem Cathedral</p>
+                        </div>
+                    </div>
+                    <div class="item-tour">
+                        <div class="img">
+                            <a href=""><img src="./images/travel-2.jpg" alt="travel-2"></a>
+                        </div>
+                        <div class="text">
+                            <p>Bich Dong Pahoga
+                                Mua Cave - Phat Diem Cathedral</p>
+                        </div>
+                    </div>
+                    <div class="item-tour">
+                        <div class="img">
+                            <a href=""><img src="./images/travel-3.jpg" alt="travel-3"></a>
+                        </div>
+                        <div class="text">
+                            <p>Bich Dong Pahoga
+                                Mua Cave - Phat Diem Cathedral</p>
+                        </div>
+                    </div>
+                    <div class="item-tour">
+                        <div class="img">
+                            <a href=""><img src="./images/travel-4.jpg" alt="travel-4"></a>
+                        </div>
+                        <div class="text">
+                            <p>Bich Dong Pahoga
+                                Mua Cave - Phat Diem Cathedral</p>
+                        </div>
+                    </div>
+                    <div class="item-tour">
+                        <div class="img">
+                            <a href=""><img src="./images/travel-5.jpg" alt="travel-5"></a>
+                        </div>
+                        <div class="text">
+                            <p>Bich Dong Pahoga
+                                Mua Cave - Phat Diem Cathedral</p>
+                        </div>
+                    </div>
+                    <div class="item-tour">
+                        <div class="img">
+                            <a href=""><img src="./images/travel-6.jpg" alt="travel-6"></a>
+                        </div>
+                        <div class="text">
+                            <p>Bich Dong Pahoga
+                                Mua Cave - Phat Diem Cathedral</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="food-services">
+                <div class="containers food-services-content">
+                    <div class="food-item">
+                        <div class="food-title">
+                            <h2>food Restaurant</h2>                           
+                        </div>                        
+                        <div class="food-imgs">
+                            <div class="food-imgs-item">
+                                <div class="slick-food">
+                                    <div><img src="./images/food-res.jpg" alt=""></div>
+                                    <div><img src="./images/food-res.jpg" alt=""></div>
+                                    <div><img src="./images/food-res.jpg" alt=""></div>
+                                </div>
+                                <div class="food-bottom">                             
+                                    <h4>Lasagne al Forno</h4>
+                                </div>
+                                <div class="d-flex btn-food-bottom">
+                                    
+                                </div>
+                            </div>                   
+                        </div>
+                    </div>
+                    <div class="services-item">
+                        <div class="food-title">
+                            <h2>services</h2>
+                        </div>
+                        <div class="services">
+                            <div class="service-items">
+                                <div class="service-item">
+                                    <div class="frame-service">
+                                        <a href="https://www.w3schools.com/howto/howto_css_flip_image.asp">                                    
+                                            <img src="./images/ser-1.png" alt="" id="img-service">
+                                        </a>
+                                        <h4>MASSAGE & SAUNA</h4> 
+                                    </div> 
+                                </div>                              
+                            </div>
+                            <div class="service-items">
+                                <div class="service-item">
+                                    <div class="frame-service">
+                                        <a href="#"><img src="./images/ser-2.png" alt="" id="img-service2"></a>
+                                        <h4>Charles Bar</h4>
+                                    </div> 
+                                </div>      
+                            </div>
+                            <div class="service-items">
+                                <div class="service-item">
+                                    <div class="frame-service">
+                                        <a href="#"><img src="./images/ser-3.png" alt="" id="img-service1"></a>
+                                        <h4>wedding</h4>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="service-items">
+                                <div class="service-item">
+                                    <div class="frame-service">
+                                        <a href="#"><img src="./images/ser-4.png" alt="" id="img-service"></a>
+                                        <h4>Meetings & Events</h4>
+                                    </div> 
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="news">
+                <div class="containers news-cont">
+                    <div class="title-news">
+                        <h2>News highlights</h2>
+                        <img src="./images/bg-titH2a.png" alt="">
+                    </div>
+                    <div class="content-news">
+                        <div class="content-news-item">
+                            <div class="news-img">
+                                <a href=""><img src="./images/news-1.jpg" alt=""></a>
+                            </div>
+                            <div class="news-txt">
+                                <p>World Tourism Day 2019: Tourism and Jobs - A better Future for All</p>
+                            </div>
+                        </div>
+                        <div class="content-news-item">
+                            <div class="news-img">
+                                <a href=""><img src="./images/news-2.jpg" alt=""></a>
+                            </div>
+                            <div class="news-txt">
+                                <p>Vietnam featured in Louis Vuitton advertisement</p>
+                            </div>
+                        </div>
+                        <div class="content-news-item">
+                            <div class="news-img">
+                                <a href=""><img src="./images/news-3.jpg" alt=""></a>
+                            </div>
+                            <div class="news-txt">
+                                <p>Foodwise: Cuon dap Da Nang and its Ha Noi brother are must-try dishes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="food-services">
+                <div class="containers">
+                    <div class="title-review">
+                        <h2>What other say?</h2>
+                    </div>
+                    <div class="review-content">
+                        <div class="review-content-item">
+                            <div class="frame-review">
+                                <div class="review-txt">
+                                    <p>I was looking for a nice hotel, but with various activities when staying there.
+                                            Boy, was I surprised! Cozynibi Hotel was anything but boring and all the things 
+                                            I did and places I visited was well worth it!</p>
+                                    </div>
+                                    <hr/>
+                                    <div class="review-info d-flex align-items-center">
+                                        <div class="avt">
+                                            <img src="./images/avt-1.jpg" alt="">
+                                        </div>
+                                        <div class="name-rw">
+                                            <h4>jOhn abraham</h4>
+                                            <h5>FROM GERMANY</h5>
+                                        </div>
+                                    </div>
+                            </div>  
+                            <div class="frame-review">
+                                <div class="review-txt">
+                                    <p>I was looking for a nice hotel, but with various activities when staying there.
+                                            Boy, was I surprised! Cozynibi Hotel was anything but boring and all the things 
+                                            I did and places I visited was well worth it!</p>
+                                </div>
+                                <hr/>
+                                <div class="review-info d-flex align-items-center">
+                                    <div class="avt">
+                                        <img src="./images/avt-2.jpg" alt="">
+                                    </div>
+                                    <div class="name-rw ">
+                                        <h4>jOhn abraham</h4>
+                                            <h5>FROM GERMANY</h5>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="frame-review">
+                                <div class="review-txt">
+                                    <p>I was looking for a nice hotel, but with various activities when staying there.
+                                            Boy, was I surprised! Cozynibi Hotel was anything but boring and all the things 
+                                            I did and places I visited was well worth it!</p>
+                                    </div>
+                                    <hr/>
+                                    <div class="review-info d-flex align-items-center">
+                                        <div class="avt">
+                                            <img src="./images/avt-1.jpg" alt="">
+                                        </div>
+                                        <div class="name-rw">
+                                            <h4>jOhn abraham</h4>
+                                            <h5>FROM GERMANY</h5>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="frame-review">
+                                <div class="review-txt">
+                                    <p>I was looking for a nice hotel, but with various activities when staying there.
+                                            Boy, was I surprised! Cozynibi Hotel was anything but boring and all the things 
+                                            I did and places I visited was well worth it!</p>
+                                </div>
+                                <hr/>
+                                <div class="review-info d-flex align-items-center">
+                                    <div class="avt">
+                                        <img src="./images/avt-2.jpg" alt="">
+                                    </div>
+                                    <div class="name-rw ">
+                                        <h4>jOhn abraham</h4>
+                                            <h5>FROM GERMANY</h5>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>    
+                        <div class="contron-pre-next">
+
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -169,5 +429,29 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.review-content-item').slick({
+
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            appendArrows: ".contron-pre-next",
+            variableWidth: true,
+            arrows: true,
+            prevArrow: '<a class="prev-slick"><img src="./images/btn-slide2.png" alt=""></a>',
+            nextArrow: '<a class="next-slick"><img src="./images/btn-slide2.png" alt="" class="flip-img"></a>'
+          });
+          $('.slick-food').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            appendArrows: ".btn-food-bottom",
+            arrows: true,
+            prevArrow: '<a href="#"><img src="./images/btn-slide2.png" alt=""></a>',
+            nextArrow: '<a href="#"><img src="./images/btn-slide2.png" alt="" class="flip-img"></a>'
+            });
+        });
+      </script>
 </body>
 </html>
