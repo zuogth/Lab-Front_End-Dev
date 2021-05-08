@@ -1,0 +1,145 @@
+.title-about{
+    position: relative;
+}
+.title-about img{width: 100%;}
+.title-about-txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.title-about-txt h1{
+    font-size: 3.6em;
+    font-family: UTM-Hanzel;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+}
+/* welcome */
+.welcome-about{
+    background-color: #d7b659;
+    position: relative;
+    padding: 2em 14.3em;
+}
+.welcome-about::before{
+    content: '';
+    position: absolute;
+    background: url('../images/bg-intro.png');
+    left: 0;
+    right: 0;
+    bottom: 99%;
+    height: 3.5em;
+}
+.welcome-about::after{
+    content: '';
+    position: absolute;
+    background: url('../images/bg-intro2.png');
+    left: 0;
+    right: 0;
+    top: 99%;
+    height: 2.3em;
+    z-index: 10;
+}
+.welcome-about-tt{
+    text-align: center;
+}
+.welcome-about-tt h5{
+    font-size: 2.1em;
+    color: #000;
+}
+.welcome-about-tt h2{
+    font-size: 2.6em;
+    font-family: UTM-Hanzel;
+    text-transform: uppercase;
+    color: #000;
+}
+.welcome-about-txt p{
+    font-size: 1.2em;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 2em 0;
+}
+/* rooms */
+.content-about {
+    position: relative;
+}
+.content-about::before{
+    content: '';
+    position: absolute;
+    background: url('../images/bg-abu.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2em;
+    z-index: 10;
+}
+.content-about::after{
+    content: '';
+    position: absolute;
+    background: url('../images/bg-intro2.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    left: 0;
+    right: 0;
+    bottom: -1.9em;
+    height: 2em;
+    z-index: 10;
+}
+.content-about img{width: 100%;}
+.content-about-txt{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 69%;
+    background-color: rgb(0 0 0 / 72%);
+    padding:9em 3.5em;
+}
+.content-about-txt h2{
+    font-size: 1.9em;
+    color: #d7b659;
+    font-family: UTM-Hanzel;
+    text-transform: uppercase;
+    margin: 0;
+}
+.content-about-txt p{
+    color: rgb(221, 221, 221);
+    font-size: 1.2em;
+    padding: 2em 0;
+}
+/* menu */
+.content-about-txt-left{
+    left: 0;
+    right: 69%;
+}
+/* responsive */
+@media only screen and (max-width:1200px){
+    .welcome-about{padding: 2em 7.3em;}
+    .content-about-txt{
+        left: 0;
+        top: 50%;
+        padding: 2em 3.5em;
+    }
+    .content-about-txt p{padding: 1em 0;}
+    .content-about-txt-left{
+        right: 0;
+    }
+}
+@media only screen and (max-width:768px){
+    .content-about-txt{top:45%;}
+}
+@media only screen and (max-width:576px){
+    .welcome-about{padding: 2em 3.3em;}
+    .welcome-about::after{height: 3.3em;}
+    .content-about-txt{
+        top:0;
+        padding: 3em 3.5em;
+        background: rgb(0 0 0 / 50%);
+    }
+    .content-about-txt h2{font-size: 1.5em;}
+    .content-about-txt p{font-size: 1em;}
+}
