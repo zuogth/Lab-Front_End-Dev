@@ -28,8 +28,8 @@ html{
     position: absolute;
     left: 0;
     right: 0;
-    top: 99%;
-    height: 50px;
+    top: 98%;
+    height: 3.5em;
     background: url("../images/bg-header.png");
 }
 .head-cont-item{
@@ -99,19 +99,23 @@ ul{
     list-style: none;
 }
 .menu ul li a{
+    padding: 0 1em;
     font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
     font-weight: 700;
 }
+.active{
+    background: url("../images/bg-tit.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 .menu ul li{
     display: inline-block;
     margin: 0 0 0 1.5em;
-    padding: 0 1em;
-    
 }
-.menu ul li:hover{
+.menu ul li a:hover{
     background: url("../images/bg-tit.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -270,6 +274,17 @@ ul{
     color: #fff;
     padding: 0.5em;
     width: 50%;
+    position: relative;
+}
+.item-tour .text::after{
+    content: '';
+    position: absolute;
+    border: 8px solid transparent;
+    right: 0;
+    bottom: 0;
+    border-bottom-color: #d7b659;
+    border-right-color: #d7b659;
+
 }
 /* food-service */
 .food-services{
@@ -566,6 +581,9 @@ footer{
     text-decoration: none;
     color: #c9c9c9;
 }
+.newsletter{
+    padding-right: 4em;
+}
 /* footer */
 /* responsive */
 @media only screen and (max-width:1200px){
@@ -577,8 +595,8 @@ footer{
     .frame-review{width: 34em;}
 }
 @media only screen and (max-width:992px){
-    html{font-size: 13px;}
-    .containers{ width: 50em;}
+    html{font-size: 12px;}
+    .containers{ width: 59em;}
     .welcome .content{ display: block; }
     .welcome-img{ width: 100%;}
     .welcome-txt{width: 100%;}
@@ -588,7 +606,7 @@ footer{
     .item-tour{width: 48%;}
     .content-news{display: block;}
     .content-news-item{margin: auto;}
-    .frame-review{width: 24em;}
+    .frame-review{width: 28em;}
     /* .food-imgs{height: 100%;} */
 }
 @media only screen and (max-width:768px){
