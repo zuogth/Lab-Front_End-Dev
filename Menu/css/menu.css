@@ -1,0 +1,844 @@
+@font-face {
+    font-family: UTM-Hanzel;
+    src: url(UTM-Hanzel.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    
+    
+}
+html{
+    font-size: 14px;
+}
+
+.header{
+    justify-content: space-between; 
+    background: url(../img/bg-header.jpg);
+    position: relative;
+    z-index: 2;
+}
+.header::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 98%;
+    height: 50px;
+    background: url("../img/bg-header.png");
+}
+/* phần ảnh */
+.logo{
+    position: relative;
+}
+.logo img{
+    margin: 1.4rem 0  0 2.8rem;
+    height: 6.3rem;
+    width: 8.6rem;
+}
+/* phần top */
+.top{
+   justify-content: flex-end;
+    margin: 1.5rem 0 0 0 ;
+    
+}
+.top .search{
+    position: relative;
+}
+.top .search input
+{  
+    padding: 0 1.4rem;
+    width: 18.2rem;
+    height: 2rem;
+    font-size: 1em;
+    border: 2px solid #878787;
+    border-radius: 1rem;
+ 
+}
+
+.top .search i{
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+}
+/* select */
+.top .select{
+
+    position: relative;
+}
+.top .select select{
+    padding: 0 0 0 2.9rem;
+    height: 2rem;
+    width: 9rem;
+    border: 2px solid #878787;
+    border-radius: 1rem;
+    margin: 0 1.4rem 0 0.8rem;
+}
+.top .select i
+{
+    position: absolute;
+    top: 0.5rem;
+    left: 1.3rem;
+
+}
+/* book */
+.top .book {
+   
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: url(../img/bg-book.png);
+    width: 9.8em;
+    height: 2em;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0 1.5rem 0 0;
+
+}
+.top .book h5{
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 2rem;
+}
+/* phần bottom */
+.bottom{
+    padding: 2rem 0 0 7rem;
+    
+}
+
+.bottom ul li a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #1b1b1b;
+    text-transform: uppercase;
+    font-weight: bold;
+ 
+    
+    
+}
+.bottom ul li:hover {
+    background: url(../img/bg-book.png);
+  
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0 0 0 1.8rem;
+    padding: 0 1.2rem 0 1.2rem;
+    
+
+}
+
+.bottom ul li{
+    list-style: none;
+  display: inline-block;
+    padding: 0 0 0 3.5rem;
+}
+#in-menu{
+    background: url(../img/bg-book.png);
+  
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    background-position: center;
+    padding: 0 1.2rem 0 1.2rem;
+    margin: 0 0 0 2.3rem;
+   
+}
+
+/* banner */
+
+.list{
+    background-image: url(../img/background-menu.png);
+}
+.banner{
+    
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 8.5rem;
+    z-index: 1;
+    
+    
+}
+.banner::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 94%;
+    height: 50px;
+    background: url("../img/bg-frs.png");
+    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.banner .banner-menu {
+    position: absolute;
+  
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+   
+}
+.banner .banner-menu h1{
+    
+    font-weight: 660;
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    margin: 0;
+    color: aliceblue;
+    font-family: UTM-Hanzel;
+
+}
+
+.banner .banner-menu .menu{
+
+    bottom: 0.7rem;
+    right: 0.8rem;
+    width: 11.3rem;
+    height: 0.85rem;
+    margin: 0;
+    
+    
+   
+}
+/* noi dung */
+.noidung{
+    background-image: url(../img/background-menu.png);
+    position: relative;
+}
+
+.noidung .row{
+    margin: 0 0 0 12rem;
+    
+
+}
+.noidung2{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50rem;
+    height: 3.6rem;
+    background: url("../img/bg-frs3.png");
+    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+/* img-food */
+
+.noidung .details .list-img .img-food img{
+   
+    height: 18.2rem;
+    width: 25.9rem;
+   border: 0.36rem solid transparent;
+   border-image-source: url(../img/bg-tit-travel.png);
+   border-image-repeat: round;
+   border-image-slice: 30%;
+   margin: 0 0 2.85rem 0;
+  
+
+}
+.noidung .details  .list-img>div{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* in-img */
+.noidung .details .list-img .in-img{
+    position: relative;
+}
+.noidung .details .list-img .in-img img{
+    height: 3.5rem;
+    width: 25.2rem;
+    position: absolute;
+    bottom: 3.2rem;
+    left: 0.4rem;
+    background-color: #1c1c1c65;
+    
+}
+.noidung .details .list-img .in-img h4{
+    font-size: 1.1em;
+    color: aliceblue;
+    font-family: UTM-Hanzel;
+    font-weight: 660;
+   
+    z-index: 2;
+    position: absolute; 
+    bottom: 3.7rem;
+    left: 1.9rem;
+}
+/* pagination */
+.pagination .list-page ul{
+    width: 14.6rem;
+    height: 2.4rem;
+    display: flex;
+    list-style-type: none;
+    margin: 3.2rem 0rem 3.2rem 46rem;
+   
+}
+
+.pagination .list-page ul li{
+
+    padding: 1.1rem;
+    margin: 0 0.37rem 0 0; 
+    background-image: url(../img/bg-pagi.png);
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+ 
+}
+#check{
+    background-image: url(../img/bg-pagi-a.png);
+}
+.pagination .list-page ul li:hover{
+
+    padding: 1.1rem;
+    margin: 0 0.37rem 0 0; 
+    background-image: url(../img/bg-pagi-a.png);
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+ 
+}
+.pagination .list-page ul li a{
+    text-decoration: none;
+    color: #1b1b1b;
+    font-weight: bold;
+    position: relative;
+    bottom: 0.6rem;
+    right: 0.2rem;   
+
+}
+.pagination .list-page ul img{
+    height: 0.78rem;
+    width: 0.45rem;
+}
+.pagination .list-page ul #next img{
+    position: relative;
+    bottom: 0.14rem;
+    left: 0.2rem;
+    
+}
+.pagination .list-page ul #next2 #next-pages{
+    position: relative;
+    bottom: 0.1rem;
+    
+}
+
+.pagination .list-page ul #next2 #next-pages2{
+    position: relative;
+    bottom: 1.588rem;
+    left: 0.5rem;
+}
+
+/* foodter */
+footer .backgournd .foot-details img{
+    width: 100%;
+    height: 25rem;
+
+}
+footer .backgournd{
+    font-size: 1.1rem;
+    position: relative;
+}
+
+footer .backgournd .foot-details .information>div{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+footer .backgournd .foot-details .information {
+    width: 1366px;
+
+  position: absolute;
+    bottom: 4.6rem;
+
+    margin-left: 6rem;
+}
+footer .backgournd .foot-details .information h3{
+    font-size: 1em;
+    color: #d7b659;
+    font-weight: bold;
+    text-transform: uppercase;
+  
+}
+footer .backgournd .foot-details .information .foot-list-menu-1{
+    margin:0 0 0 5.9rem;
+}
+
+footer .backgournd .foot-details .information ul{
+    padding: 0;
+    margin-top: 3.4rem;
+}
+
+footer .backgournd .foot-details .information ul li{
+    list-style-type: none;
+    padding-bottom: 1rem;
+ 
+    
+}
+footer .backgournd .foot-details .information ul li a{
+    text-decoration: none;
+    font-size: 1em;
+    color: #d1d1d1;
+ 
+   
+}
+footer .backgournd .foot-details .information .foot-menu ul li i{
+    color: #d1d1d1;
+    padding-right: 0.85rem;
+}
+footer .backgournd .foot-details .information .foot-menu-3 ul li .foot-input input{
+    width: 16.3rem;
+    height: 2.64rem;
+    border-radius: 5px 0 0 5px;
+ 
+}
+footer .backgournd .foot-end-cuoi ul li .foot-input{
+    position: relative;
+}
+footer .backgournd  ul li .input-group-append{
+    width: 2.65rem;
+    height: 2.5rem;
+    position: absolute;
+    bottom: 8.82rem;
+    right: 5rem;
+}
+
+footer .backgournd  ul li .input-group-append #btn{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+#social button{
+    margin-top: 2rem;
+    border: 1px solid #d1d1d1;
+    border-radius: 100%;
+    background-color: #1c1c1c;
+}
+#social i{
+    color: #d1d1d1;
+    padding: 0.5rem;
+}
+#end{
+    border-bottom: 1px solid #878787;
+    width: 100%;
+}
+/* foot-end-cuoi */
+footer .backgournd .foot-end-cuoi ul{
+    width: 100%;
+    position: absolute;
+    bottom: .2rem;
+    margin-left: 5rem;
+    padding: 0;
+}
+footer .backgournd .foot-end-cuoi ul li {
+    list-style-type: none;
+    color: #d1d1d1;
+    margin-right: 0.6rem;
+}
+footer .backgournd .foot-end-cuoi ul li a{
+    text-decoration: none;
+    font-size: 1em;
+    color: #d1d1d1;
+  font-size: 1rem;
+    margin-right: 0.6rem;
+}
+#copyright{
+
+    margin-left: 30.5rem;
+}
+/* responsive  */
+
+@media only screen and (max-width:1367px)
+{
+    
+    .noidung .details .list-img .img-food img{
+        margin: 0 0 2.85rem 7rem;
+
+    }
+    .noidung .details .list-img{
+     
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .noidung .details .list-img .in-img{
+        position: relative;
+    }
+    .noidung .details .list-img .in-img img{
+        height: 3.5rem;
+        width: 25.2rem;
+        position: absolute;
+        bottom: 3.2rem;
+        left: 7.3rem;
+        z-index: 2;
+    }
+    
+    .noidung .details .list-img .in-img h4{
+        font-size: 1.1em;
+        color: aliceblue;
+        font-family: UTM-Hanzel;
+        font-weight: 660;
+
+        z-index: 2;
+        position: absolute; 
+        bottom: 3.7rem;
+        left: 8.4rem;
+    }
+    .pagination .list-page ul{
+        width: 14.6rem;
+        height: 2.4rem;
+        display: flex;
+        list-style-type: none;
+        margin: 4.2rem 0 3.6rem 42rem;
+        padding: 0;
+    }
+    
+    footer .backgournd .foot-details .information {
+        width: 85.64rem;
+    }
+    footer .backgournd  ul li .input-group-append{
+        width: 2.65rem;
+        height: 2.5rem;
+        position: absolute;
+        bottom: 8.82rem;
+        right: 2rem;
+    }
+    #copyright{
+
+        margin-left: 18.6rem;
+    }
+    .pagination .list-page ul{
+        width: 14.6rem;
+        height: 2.4rem;
+        display: flex;
+        list-style-type: none;
+        margin: 3.2rem 0 3.6rem 41.5rem;
+       
+    }
+    .bottom{
+        padding: 2rem 0 0 6rem;
+        
+    }
+    .top .select select{
+        padding: 0 0 0 2rem;
+        height: 2rem;
+        width: 9rem;
+        border: 2px solid #878787;
+        border-radius: 1rem;
+        margin: 0 1.4rem 0 0.8rem;
+    }
+}
+@media only screen and (max-width:1200px) {
+    html{
+        font-size: 10px;
+  } 
+  .bottom{
+    padding: 2rem 0 0 0;
+    
+}
+.top{
+    justify-content: flex-end;
+     margin: 1.5rem 1.5rem 0 0  ;
+     
+ }
+ /* footer .backgournd .foot-details .information {
+    width: 100;
+} */
+.noidung2{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    
+    top: 71rem;
+    height: 3.6rem;
+    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+    
+}
+.noidung .details .list-img .img-food img {
+    margin: 0 0 2.85rem 17rem;
+}
+.noidung .details .list-img .in-img img{
+    height: 3.5rem;
+    width: 25.2rem;
+    position: absolute;
+    bottom: 3.2rem;
+    left: 17.4rem;
+    z-index: 2;
+}
+.noidung .details .list-img .in-img h4{
+    font-size: 1.1em;
+    color: aliceblue;
+    font-family: UTM-Hanzel;
+    font-weight: 660;
+
+    z-index: 2;
+    position: absolute; 
+    bottom: 3.7rem;
+    left: 18.4rem;
+}
+.pagination .list-page ul #next2 #next-pages2 {
+    position: relative;
+    bottom: 1.53rem;
+    left: 0.5rem;
+}
+.pagination .list-page ul #next2 #next-pages {
+    position: relative;
+    right: 0.1rem;
+}
+.pagination .list-page ul li a {
+    text-decoration: none;
+    color: #1b1b1b;
+    font-weight: bold;
+    position: relative;
+    bottom: 0.5rem;
+    right: 0.2rem;
+}
+
+
+
+}
+
+
+@media only screen and (max-width:992px) {
+
+    html{
+        font-size: 10px;
+  }
+  .bottom ul {
+      padding: 0;
+  }
+  footer .backgournd .foot-end-cuoi ul{
+    width: 100%;
+    position: absolute;
+    bottom: .2rem;
+    margin-left: 4.5rem;
+    padding: 0;
+
+}
+  
+}
+@media only screen and (max-width:768px) {
+
+    html{
+        font-size: 7px;
+  }
+  .bottom ul {
+      padding: 0;
+  }
+  footer .backgournd .foot-end-cuoi ul{
+    width: 100%;
+    position: absolute;
+    bottom: .2rem;
+    margin-left: 4.5rem;
+    padding: 0;
+}
+  
+}
+
+
+/* nav */
+
+.btn-nav {
+    width: 2rem;
+    height: 2rem;
+    display: none;  
+    align-items: center;
+    margin-left: 2rem ;
+    
+}
+
+.nav_mobile{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height:200vh;
+    transform: translateX(100%);
+    transition: transform linear 0.4s;
+}
+.times{
+
+   position: absolute;
+   top: 2rem;
+   left: 95%;
+}
+.times {
+    width: 2rem;
+    height: 2rem;
+    color: #d1d1d1;
+
+}
+.list-nav-mobile{
+    margin-top: 4rem;
+}
+
+.list-nav-mobile li{
+    list-style: none;
+    padding: 1rem;
+    text-align: center;
+   
+   
+}
+.list-nav-mobile li a{
+    text-decoration: none;
+    color: #d1d1d1;
+    font-weight: bold;
+    font-size: 2rem;
+
+  
+    
+}
+#check-mobile:checked ~ .nav_mobile
+{
+    transform: translateX(0);
+}
+#check-mobile:checked ~ .times{
+    display: none;
+}
+#check-mobile:checked ~ .nav-overlay{
+    display: block;
+}
+/* search mobile */
+.search-mobile{
+
+    margin:3rem 0 0 2rem ;
+    display: none;
+
+    
+}
+.search-mobile label{
+    width: 2rem;
+    height: 2rem;
+   
+}
+
+#icon{
+    
+    color: #1b1b1b;
+}
+
+.class-input-moblie
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95.8rem;
+    height:200vh;
+    transform: translateX(150%);
+    transition: transform linear 0.4s;
+}
+
+.responsive
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95.8rem;
+    height:200vh;
+    transform: translateX(0);
+    transition: transform linear 0.4s;
+}
+.input-mobile-search {
+    padding: 2rem;
+}
+.input-mobile-search input{
+    margin-top:5rem;
+    width: 100%;
+    height: 4rem;
+
+}
+.input-mobile-search label #icon2{
+    color: #fff;
+}
+ 
+@media only screen and (max-width:576px) {
+ html{
+     font-size: 6px;
+ }
+ .btn-nav{
+    display: block;
+}
+.bottom ul{
+    display: none;
+}
+
+.top > div {
+    display: none;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90%;
+    height: 50px;
+    background: url(../img/bg-frs.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.logo {
+    padding: 1rem;
+
+}
+.logo img {
+
+margin-left: 40rem; 
+
+}
+.noidung .details
+{
+    margin: 0 -2rem 0  0;
+}
+footer .backgournd .foot-end-cuoi ul{
+    width: 100%;
+    position: absolute;
+    bottom: .2rem;
+    margin-left: 3.5rem;
+    padding: 0;
+}
+.pagination .list-page ul #next2 #next-pages2 {
+    position: relative;
+    bottom: 1.57rem;
+    left: 0.5rem;
+}
+.pagination .list-page ul #next2 #next-pages {
+    position: relative;
+    right: 0.05rem;
+}
+.search-mobile {
+    display: block;
+}
+footer .backgournd .foot-details .information .foot-list-menu-1 {
+    margin: 0 7rem 0 5rem;
+}
+
+}
