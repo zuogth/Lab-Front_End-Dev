@@ -7,9 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/aboutus.css">
+    <link rel="stylesheet" href="./css/gallery.css">
     <title>Document</title>
 </head>
 <body>
@@ -41,14 +41,14 @@
                         <nav class="menu align-items-center">
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="aboutus.html" class="active">About Us</a></li>
+                                <li><a href="aboutus.html">About Us</a></li>
                                 <li><a href="#">Accommodation</a></li>
                                 <li><a href="#">Menu</a></li>
                                 <li><a href="#">Tour travel</a></li>
                                 <li><a href="#">Service</a></li>
                                 <li><a href="#">news</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="#">COntact</a></li>
+                                <li><a href="gallery.html" class="active">Gallery</a></li>
+                                <li><a href="contact.html">COntact</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -57,41 +57,62 @@
         </div>        
     </header>
     <section>
-        <div class="title-about">
-            <img src="./images/banner-about-us.jpg" alt="">
-            <div class="title-about-txt">
-                <h1>About us</h1>
+        <div class="title-gallery">
+            <img src="./images/banner-gallery.jpg" alt="">
+            <div class="title-gallery-txt">
+                <h1>gallery</h1>
                 <img src="./images/bg-titH2a.png" alt="">
             </div>
         </div>
-        <div class="welcome-about">
-            <div class="welcome-about-tt">
-                <h5>Welcome to</h5>
-                <h2>COZYNIBI HOTEL</h2>
-            </div>
-            <div class="welcome-about-txt">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel molestie nisl. Duis ac mi leo. Mauris at convallis erat. Aliquam interdum semper luctus. Aenean ex tellus, gravida ut rutrum dignissim, malesuada vitae nulla. Sed viverra, nisl dapibus lobortis porttitor, risus risus dictum risus, sed rhoncus orci urna dignissim leo. Cras id nunc nulla. Aliquam a tortor fermentum, finibus elit ac, dictum purus. Nulla mollis ex interdum commodo luctus. In hac habitasse platea dictumst. Quisque vel rutrum ipsum.</p>
-            </div>
-        </div>
-        <div class="content-about">
-            <img src="./images/abu-1.jpg" alt="">
-            <div class="content-about-txt">
-                <h2>comfortable rooms</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel molestie nisl. Duis ac mi leo. Mauris at convallis erat. Aliquam interdum semper luctus. Aenean ex tellus, gravida ut rutrum dignissim, malesuada vitae nulla. Sed viverra, nisl dapibus lobortis porttitor, risus risus dictum risus, sed rhoncus orci urna </p>
-            </div>
-        </div>
-        <div class="content-about">
-            <img src="./images/abu-2.jpg" alt="">
-            <div class="content-about-txt content-about-txt-left">
-                <h2>extensive menu</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel molestie nisl. Duis ac mi leo. Mauris at convallis erat. Aliquam interdum semper luctus. Aenean ex tellus, gravida ut rutrum dignissim, malesuada vitae nulla. Sed viverra, nisl dapibus lobortis porttitor, risus risus dictum risus, sed rhoncus orci urna </p>
-            </div>
-        </div>
-        <div class="content-about">
-            <img src="./images/abu-3.jpg" alt="">
-            <div class="content-about-txt">
-                <h2>various services</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel molestie nisl. Duis ac mi leo. Mauris at convallis erat. Aliquam interdum semper luctus. Aenean ex tellus, gravida ut rutrum dignissim, malesuada vitae nulla. Sed viverra, nisl dapibus lobortis porttitor, risus risus dictum risus, sed rhoncus orci urna </p>
+        <div class="gallery">
+            <div class="containers">
+                <div class="gallery-items">
+                    <div class="gallery-item">
+                        <a href=""><img src="./images/gallery-item.jpg" alt="gallery1"></a>
+                        <a href="" id="gallery-layer"><img src="./images/gallery-item-layer.png" alt="gallery1"></a>  
+                    </div>
+                    <div class="gallery-item">
+                        <a href=""><img src="./images/gallery2.jpg" alt="gallery2"></a>
+                        <a href="" id="gallery-layer"><img src="./images/gallery-item-layer.png" alt="gallery1"></a> 
+                    </div>
+                    <div class="gallery-item">
+                        <a href=""><img src="./images/gallery3.jpg" alt="gallery3"></a>
+                        <a href="" id="gallery-layer"><img src="./images/gallery-item-layer.png" alt="gallery1"></a> 
+                    </div>
+                    <div class="gallery-item">
+                        <a href=""><img src="./images/gallery4.jpg" alt="gallery4"></a>
+                        <a href="" id="gallery-layer"><img src="./images/gallery-item-layer.png" alt="gallery1"></a> 
+                    </div>
+                    <div class="gallery-item">
+                        <a href=""><img src="./images/gallery5.jpg" alt="gallery5"></a>
+                        <a href="" id="gallery-layer"><img src="./images/gallery-item-layer.png" alt="gallery1"></a> 
+                    </div>
+                    <div class="gallery-item">
+                        <a href=""><img src="./images/gallery6.jpg" alt="gallery6"></a>
+                        <a href="" id="gallery-layer"><img src="./images/gallery-item-layer.png" alt="gallery1"></a> 
+                    </div>
+                    <div class="gallery-item">
+                        <a href=""><img src="./images/gallery7.jpg" alt="gallery7"></a>
+                        <a href="" id="gallery-layer"><img src="./images/gallery-item-layer.png" alt="gallery1"></a> 
+                    </div>
+                    <div class="gallery-item">
+                        <a href=""><img src="./images/gallery8.jpg" alt="gallery8"></a>
+                        <a href="" id="gallery-layer"><img src="./images/gallery-item-layer.png" alt="gallery1"></a> 
+                    </div>
+                </div>
+                <div class="pagelist">
+                    <ul>
+                        <li><a href="">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">
+                            <i class="fas fa-angle-right"></i>
+                        </a></li>
+                        <li><a href="">
+                            <i class="fas fa-angle-double-right"></i>
+                        </a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>

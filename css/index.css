@@ -122,6 +122,15 @@ ul{
 }
 /* section */
 /* welcome */
+.carousel-control-prev-icon{
+    background: url('../images/btn-slide.png');
+    background-size:100% 100% ;
+}
+.carousel-control-next-icon{
+    background: url('../images/btn-slide.png');
+    background-size:100% 100% ;
+    -webkit-transform: scale(-1);
+}
 .welcome{
     background-color: #d7b659;
     position: relative;
