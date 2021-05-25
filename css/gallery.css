@@ -74,12 +74,18 @@
     display: flex;
     justify-content: center;
 }
-.pagelist ul li{
+
+.li-default{
     background: url('../images/bg-pagi.png');
     background-size:100% 100% ;
     background-repeat: no-repeat;
     padding: 1em;
     margin: 0 0.3em;
+}
+.li-active{
+    background: url('../images/bg-pagi-a.png');
+    background-size:100% 100% ;
+    background-repeat: no-repeat;
 }
 .pagelist ul li:hover{
     background: url('../images/bg-pagi-a.png');
