@@ -29,7 +29,7 @@ html{
     left: 0;
     right: 0;
     top: 98%;
-    height: 3.5em;
+    height: 49px;
     background: url("../images/bg-header.png");
 }
 .head-cont-item{
@@ -119,6 +119,60 @@ ul{
     background: url("../images/bg-tit.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+.nav-responsive{
+    display: none;
+    font-size: 3em;
+    color: #000;
+    border: none;
+    background: border-box;
+}
+.menu-res{
+    position: fixed;
+    z-index: 9999;
+    background: white;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    display: none;
+    animation: menu-res;
+    animation-duration: 1s;
+}
+@keyframes menu-res{
+    from{right: 100%;}
+    to{right: 0;}
+}
+@keyframes menu-res-hide{
+    from{right: 0;}
+    to{right: 100%;}
+}
+.menu-res ul li a{
+    padding: 0 1em;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+}
+.menu-res nav ul li{
+    display: block;
+    margin: 2em 0;
+}
+.menu-res ul li a:hover{
+    background: url("../images/bg-tit.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.close-menu{
+    text-align: end;
+    padding: 1em 2em 0 0;
+}
+.close-menu button{
+    border: none;
+    background: border-box;
+    font-size: 2em;
 }
 /* section */
 /* welcome */
@@ -623,6 +677,8 @@ footer{
     .logo img{height: 5rem;}
 }
 @media only screen and (max-width:576px){
+    .menu ul{display: none;}
+    .nav-responsive{display: block;}
     .services .service-items{width: 100%; }
     .containers{ width: 34em;}
     .item-tour{width: 100%;}

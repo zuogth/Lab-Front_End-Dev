@@ -53,4 +53,10 @@ $(document).ready(function(){
         $('img#slick-food-img').attr('src',name);
         $('img#slick-food-img').attr('data-id',index);
     });
-})
+    $('.nav-responsive').click(function(){
+        $('.menu-res').show();
+    });
+    $('.close-menu button').click(function(){
+        $('.menu-res').hide();
+    });
+});
